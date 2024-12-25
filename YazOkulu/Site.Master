@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Master Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="masterForm" runat="server">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Yaz Okulu</a>
+                </div>
+              <ul class="nav navbar-nav">
+                      <li><a href="#">Ana Sayfa</a></li>
+                      <li><a href="OgrenciListe.aspx">Öğrenciler</a></li>
+                      <li><a href="OgrenciKaydet.aspx">Yeni Kayıt</a></li>
+                      <li class="auto-style1"><a href="#">Dersler</a></li>
+                      <li><a href="#">Kontenjanlar</a></li>
+                      <li><a href="#">Yardım</a></li>
+              </ul>
+            </div>
+        </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
